@@ -383,7 +383,7 @@ randomICs <- function(e=1,k=0.5,u=0.7) {
   I = A%*%diag(c(sum(s[2:3]^2),sum(s[c(1,3)]^2),sum(s[1:2]^2))/12)%*%t(A)
   Ltmp = fct.randomUnitVector()
   wtmp = solve(I)%*%Ltmp
-  Erottmp = t(wtmp)%*%Ltmp/2
+  Erottmp = as.numeric(t(wtmp)%*%Ltmp/2)
   L = Ltmp*sqrt(Erot/Erottmp)
   
   # finalize
