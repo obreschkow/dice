@@ -12,7 +12,7 @@
 # 3) Start Rstudio, or, if only R itself is installed, run R in a terminal
 # 4) Before running the dice simulation for the first time, install some R-packages
 #    by running this command in R:
-#    > install.packages(c("compiler","inline","rgl"))
+#    > install.packages(c("inline","rgl"))
 # 5) Compile the dice simluation by typing
 #    > source('[path]/diceSimulation.R')
 # 6) Run the default example by typing
